@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/icon.png"
+    />
+    <link rel="stylesheet" href="_CSS/style.css" />
+    <title>Todo app</title>
+  </head>
+  <body class="dark-body">
+    <div class="container">
+      <!-- HEADER -->
+      <header class="heading">
+        <h1>Todo</h1>
+        <span id="theme-toggle" class="dark-SVG" alt="sun-SVG"></span>
+      </header>
+
+      <!-- ADD TASK AREA -->
+      <div class="form-div dark" id="form-div">
+        <form id="input-form" autocomplete="off">
+          <div class="btn-block">
+            <span class="inner-circle inner-circle-input dark-circle">
+              <button class="btn" type="submit"></button>
+            </span>
+          </div>
+          <input
+            type="text"
+            name="task"
+            id="task-input"
+            class="task-input dark"
+            placeholder="Create a new todo..."
+            required
+          />
+        </form>
+      </div>
+      <!-- CONTENT SECTION -->
+      <section class="dark" id="main-section">
+        <ul id="task-ul">
+          <!-- <li class="task-item dark-btm">
+            <div class="btn-block">
+              <span class="inner-circle dark-circle item-circle"> </span>
+            </div>
+            <div class="item-desc">Content <span class="cross"></span></div>
+          </li> -->
+        </ul>
+        <!-- FOOTER -->
+        <div class="footer-links">
+          <div class="items-left-div">
+            <a href="#" class="items-left">0 items left</a>
+          </div>
+          <div class="builtin-filters">
+            <span class="filter-btn all"><a href="#">All</a></span>
+            <span class="filter-btn active"><a href="#">Active</a></span>
+            <span class="filter-btn completed"><a href="#">Completed</a></span>
+          </div>
+          <div class="clear-div">
+            <a href="#" class="clear-btn">Clear Completed</a>
+          </div>
+        </div>
+        
+      </section>
+      <div class="mobile-filters dark">
+        <span class="filter-btn all-m"><a href="#">All</a></span>
+          <span class="filter-btn active-m"><a href="#">Active</a></span>
+          <span class="filter-btn completed-m"><a href="#">Completed</a></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="_app/app.js"></script>
+  </body>
+</html>
